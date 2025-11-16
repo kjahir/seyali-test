@@ -72,17 +72,17 @@ export default function Home() {
 
           <div className={styles.card}>
             <h2>📊 Dashboard</h2>
-            <p>Access your dashboard</p>
+            <p>Access your Seyali dashboard</p>
           </div>
 
           <div className={styles.card}>
             <h2>⚙️ Settings</h2>
-            <p>Configure your application</p>
+            <p>Configure your application using Seyali</p>
           </div>
 
           <div className={styles.card}>
             <h2>💬 Support</h2>
-            <p>Get help from our team</p>
+            <p>Get help from our Seyali team</p>
           </div>
         </div>
       </main>

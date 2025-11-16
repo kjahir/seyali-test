@@ -36,14 +36,14 @@ app.get('/health', (req, res) => {
 // API routes
 app.get('/api/hello', (req, res) => {
   res.json({
-    message: 'Welcome to Seyali API!',
+    message: 'Welcome to Seyali.ai API!',
     version: '1.0.0'
   });
 });
 
 app.get('/api/status', (req, res) => {
   res.json({
-    backend: 'running',
+    backend: 'seyali is running',
     database: process.env.DATABASE_URL ? 'configured' : 'not configured',
     redis: process.env.REDIS_URL ? 'configured' : 'not configured'
   });
