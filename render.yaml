@@ -1,0 +1,48 @@
+services:
+  - type: web
+    name: seyali-backend
+    env: node
+    region: singapore
+    plan: free
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && npm start
+    healthCheckPath: /health
+    autoDeploy: true
+    
+    envVars:
+      - key: NODE_ENV
+        value: production
+      
+      - key: PORT
+        value: 10000
+      
+      - key: DATABASE_URL
+        fromDatabase:
+          name: seyali-postgres
+          property: connectionString
+      
+      - key: REDIS_URL
+        fromDatabase:
+          name: seyali-redis
+          property: connectionString
+      
+      - key: JWT_SECRET
+        generateValue: true
+      
+      - key: CORS_ORIGIN
+        sync: false
+      
+      - key: FRONTEND_URL
+        sync: false
+
+databases:
+  - name: seyali-postgres
+    databaseName: seyali_db
+    user: seyali_user
+    plan: free
+    region: singapore
+  
+  - name: seyali-redis
+    plan: free
+    region: singapore
+    maxmemoryPolicy: allkeys-lru
