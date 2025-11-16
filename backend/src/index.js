@@ -36,7 +36,7 @@ app.get('/health', (req, res) => {
 // API routes
 app.get('/api/hello', (req, res) => {
   res.json({
-    message: 'Welcome to Seyali.ai API!',
+    message: 'Welcome to Seyali.ai APIs!',
     version: '1.0.0'
   });
 });

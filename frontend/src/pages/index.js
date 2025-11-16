@@ -67,7 +67,7 @@ export default function Home() {
         <div className={styles.grid}>
           <div className={styles.card}>
             <h2>📚 Documentation</h2>
-            <p>Learn about Seyali features and API</p>
+            <p>Learn about Seyali feature and API</p>
           </div>
 
           <div className={styles.card}>
