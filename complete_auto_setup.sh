@@ -815,11 +815,11 @@ cat > vercel.json << 'EOF'
   "public": false,
   "regions": ["sin1"],
   "env": {
-    "NEXT_PUBLIC_API_URL": "https://seyali-backend.onrender.com"
+    "NEXT_PUBLIC_API_URL": "https://seyali-test.onrender.com"
   },
   "build": {
     "env": {
-      "NEXT_PUBLIC_API_URL": "https://seyali-backend.onrender.com"
+      "NEXT_PUBLIC_API_URL": "https://seyali-test.onrender.com"
     }
   },
   "git": {
